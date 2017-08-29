@@ -1,0 +1,35 @@
+/* Footer */
+
+footer {
+  width: 100%;
+  color: #fff;
+  background-color: #134f5c;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#footerRow {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.col-xs-12 a i {
+  font-size: 50px;
+  padding: 10px;
+  color: #fff;
+}
+
+.col-xs-12 a i:hover {
+    color: #2498b1;
+}
+
+#footer_1 {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+}
+
+#footer_1 i {
+    font-size: 30px;
+    font-weight: bold;
+}
