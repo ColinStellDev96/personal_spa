@@ -2,40 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Colin Stell: About</title>
+    <title>Colin Stell: Web-Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/nav.css" type="text/css">
-    <link rel="stylesheet" href="css/about.css" type="text/css">
-    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/portfolio.css" type="text/css">
+    <link rel="stylesheet" href="/css/about.css" type="text/css">
+    <link rel="stylesheet" href="/css/contact.css" type="text/css">
+    <link rel="stylesheet" href="/css/footer.css" type="text/css">
     <link rel="icon" type="image/png" href="/brand/favicon_inverse.png" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/24beded546.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-      <header>
-          <div class="inner-head">
-              <nav class="navbar navbar-default">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="/">
-                      <img alt="Brand" src="/brand/white_logo_transparent@2x.png">
-                    </a>
-                  </div>
-                      <ul class="nav nav-pills">
-                          <li role="presentation"><a href="/portfolio">Portfolio</a></li>
-                          <li role="presentation"><a href="/about">About</a></li>
-                          <li role="presnetation"><a href="/blog"> Blog</a></li>
-                          <li role="presentation"><a href="/contact">Contact</a></li>
-                     </ul>
-              </nav>
-          </div>
-      </header>
+      <div id="app">
+          <header>
+              <div class="inner-head">
+                  <nav class="navbar navbar-default">
+                      <div class="navbar-header">
+                        <router-link class="navbar-brand" to="/">
+                          <img alt="Brand" src="/brand/white_logo_transparent@2x.png">
+                      </router-link>
+                      </div>
+                          <ul class="nav nav-pills">
+                              <li role="presentation"><router-link to="/portfolio">Portfolio</router-link></li>
+                              <li role="presentation"><router-link to="/about">About</router-link></li>
+                              <li role="presentation"><router-link to="/contact">Contact</router-link></li>
+                         </ul>
+                  </nav>
+              </div>
+          </header>
 
-      <div class="container">
-
-
-    </div>
+        <router-view></router-view>
 
     <footer>
         <div class="container">
@@ -59,5 +61,7 @@
         </div>
       </div>
     </footer>
+</div>
+    <script src="/main.js"></script>
   </body>
 </html>
