@@ -48,6 +48,7 @@ header {
 .nav a:hover {
   color: #2498b1;
   font-weight: bold;
+  background-color: #134f5c;
 }
 
 .nav .current {

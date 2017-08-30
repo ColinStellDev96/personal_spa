@@ -3,10 +3,10 @@ Vue.use(VueRouter);
 var myRouter = new VueRouter({
     routes: [
         {
-            path:'/',
+            path: '/',
             component: {
                 template: `
-                    <div>
+                    <div id="home">
                     <div class="container">
 
                     <div class="jumbotron"></div>
@@ -48,16 +48,15 @@ var myRouter = new VueRouter({
                     </div>
                 </div>`
             }
-        },
-        {
-            path:'/portfolio',
+        }, {
+            path: '/portfolio',
             component: {
                 template: `
-                    <div>
+                    <div id="portfolio">
                         <div class="container">
                         <h2 class="text-center head">Web-Development Work</h2>
 
-                          <div class="row">
+                          <div class="row" class='por'>
                               <div class="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                   <img src="https://placeimg.com/1000/700/tech" alt="project">
@@ -126,12 +125,11 @@ var myRouter = new VueRouter({
                         </div>
             </div>`
             }
-        },
-        {
-            path:'/about',
+        }, {
+            path: '/about',
             component: {
                 template: `
-                <div>
+                <div id="about">
                     <div class="container">
 
                     <div class="row">
@@ -185,8 +183,7 @@ var myRouter = new VueRouter({
               </div>
           </div>`
             }
-        },
-        {
+        }, {
             path: '/contact',
             component: {
                 template: `
@@ -227,5 +224,4 @@ var myRouter = new VueRouter({
     ]
 });
 
-
-var mainVm = new Vue({el: '#app',router: myRouter});
+var mainVm = new Vue({el: '#app', router: myRouter});

@@ -19,7 +19,7 @@ body {
     box-shadow: 0 0 3rem #134f5c;
 }
 
-.text-center {
+#home .text-center {
   color: #134f5c;
   padding: 10px 0 30px 0;;
   text-transform: uppercase;
@@ -27,27 +27,27 @@ body {
   font-weight: bold;
 }
 
-.row {
+#home .row {
     margin: 10px 0 30px 0;
     padding-bottom: 30px;
     border-bottom: 3px solid #134f5c;
 }
 
-.row img {
+#home .row img {
     box-shadow: 0 0 6rem #134f5c;
 }
 
-.text {
+#home .text {
     padding-left: 25px;
 }
 
-h3 {
+#home h3 {
     color: #0a2b32;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.col-md-6 a {
+#home .col-md-6 a {
     text-decoration: none;
     color: #2498b1;
     font-size: 18px;

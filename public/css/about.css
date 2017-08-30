@@ -8,38 +8,38 @@ body {
   letter-spacing: .5px;
 }
 
-.row {
+#about .row {
     margin: 30px 0 30px 0;
 }
 
-.col-md-6 img {
+#about .col-md-6 img {
     height: 400px;
     width: auto;
     border-radius: 50%;
     box-shadow: 0 0 3rem #134f5c;
 }
 
-#code_craft_img img {
+#about #code_craft_img img {
     height: 200px;
     width: auto;
     border-radius: 2rem;
 }
 
-h3 {
+#about h3 {
     color: #0a2b32;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#row2 {
+#about #row2 {
     padding-bottom: 30px;
 }
 
-.text-center {
+#about .text-center {
     padding: 30px 0;
 }
 
-.text-center h4 {
+#about .text-center h4 {
     display: inline-block;
     text-transform: uppercase;
     color: #134f5c;
@@ -47,7 +47,7 @@ h3 {
     margin: 10px;
 }
 
-.text-center i {
+#about .text-center i {
     font-size: 40px;
     color:  #2498b1;
     margin: 10px;
